@@ -111,6 +111,8 @@ def attack():
                 turns = turns - n
                 del proxies[:]
                 proxies = proxify.many()
+        except KeyboardInterrupt:
+            exit(0)
         except:
             pass
 
