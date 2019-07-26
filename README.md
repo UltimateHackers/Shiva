@@ -23,3 +23,13 @@ You must keep in mind that Shiva is only effective against wordpress site so mak
 Number of threads should be selected according to the network speed.
 
 <img src='https://i.imgur.com/dWDfGnr.png' />
+
+### Docker
+To deploy using docker, proceed as follows:
+```bash
+git clone https://github.com/UltimateHackers/Shiva.git
+cd Shiva
+docker build -t shiva .
+docker run -it shiva -u example.com -t 10
+
+```
